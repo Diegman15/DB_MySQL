@@ -1,0 +1,24 @@
+﻿<Window x:Class="DB_CRUD.Principal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DB_CRUD"
+        mc:Ignorable="d"
+        Title="Principal" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Mercado/Principal.jpg"/>
+        </Grid.Background>
+        <ListView x:Name="lvJugadores" HorizontalAlignment="Left" Height="246" Margin="29,31,0,0" VerticalAlignment="Top" Width="753" Background="{x:Null}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="29,335,0,0" VerticalAlignment="Top" Width="103" Height="45" FontFamily="Arial" FontSize="20" Click="Button_Click"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="161,335,0,0" VerticalAlignment="Top" Width="103" Height="45" FontFamily="Arial" FontSize="20" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
